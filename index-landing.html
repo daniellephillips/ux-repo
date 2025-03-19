@@ -11,7 +11,7 @@
     <style>
         /* General Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
         }
 
         /* Navbar */
@@ -32,7 +32,7 @@
         }
 
         .hero h1 {
-            font-size: 26px;
+            font-size: 28px;
             font-weight: bold;
         }
 
@@ -68,10 +68,27 @@
             margin: 10px;
         }
 
-        /* Blue Section Divider */
+        /* Section Divider (Blue Bar with White Text) */
         .section-divider {
             height: 66px;
             background-color: #5a7fd7;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .section-divider h2 {
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+
+        .subheading {
+            color: white;
+            font-size: 14px;
+            font-weight: normal;
+            margin-left: 10px;
         }
 
         /* About Section */
@@ -81,30 +98,33 @@
             padding: 50px 20px;
         }
 
-        .about h2 {
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
         .about p {
             font-size: 14px;
+        }
+
+        .about strong {
+            font-size: 15px;
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
         }
 
         /* Principles Section */
         .principles {
             background-color: white;
             padding: 50px 20px;
-            text-align: center;
-        }
-
-        .principles h2 {
-            color: #5a7fd7;
-            font-weight: bold;
+            text-align: left;
         }
 
         .principles p {
             font-size: 16px;
             color: black;
+            margin-bottom: 10px;
+        }
+
+        .principles strong {
+            font-size: 17px;
+            font-weight: bold;
         }
 
         /* Stats Section */
@@ -142,16 +162,16 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Super-connector of ideas and people-Updated</h1>
+        <h1>Super-connector of ideas and people</h1>
         <p>Helping others get unstuck with clarity.</p>
         
         <!-- Logos -->
         <div class="logos">
-            <img src="hp-logo.png" alt="HP">
-            <img src="exxon-logo.png" alt="ExxonMobil">
-            <img src="rice-logo.png" alt="Rice University">
-            <img src="fifa-logo.png" alt="FIFA">
-            <img src="espn-logo.png" alt="ESPN">
+            <img src="image.png" alt="HP">
+            <img src="image.png" alt="ExxonMobil">
+            <img src="image.png" alt="Rice University">
+            <img src="image.png" alt="FIFA">
+            <img src="image.png" alt="ESPN">
         </div>
 
         <p class="text-secondary">
@@ -164,21 +184,22 @@
     <section class="portfolio">
         <h5><strong>Explore Portfolio</strong></h5>
         <div class="d-flex justify-content-center flex-wrap">
-            <img src="hp-image.jpg" alt="HP">
-            <img src="exxon-image.jpg" alt="ExxonMobil">
-            <img src="rice-owls.jpg" alt="Rice Owls">
-            <img src="espn-image.jpg" alt="ESPN">
+            <img src="image.png" alt="HP">
+            <img src="image.png" alt="ExxonMobil">
+            <img src="image.png" alt="Rice Owls">
+            <img src="image.png" alt="ESPN">
         </div>
     </section>
 
     <!-- Blue Section Divider (Before About) -->
-    <div class="section-divider"></div>
+    <div class="section-divider">
+        <h2>About <span class="subheading">my origin story.</span></h2>
+    </div>
 
     <!-- About Section -->
     <section class="about">
         <div class="container">
-            <h2>About <span style="font-size: 16px; font-weight: normal;">my origin story.</span></h2>
-            <p><strong>Where I started.</strong> I always loved soccer. At 15, I asked U.S. Soccer how to get involved...</p>
+            <p><strong>Where I started.</strong> Growing up, I always loved soccer. At 15, I asked U.S. Soccer how to get involved...</p>
             <p><strong>What I studied.</strong> I double-majored in Decision Science and Design...</p>
             <p><strong>What drives me.</strong> I’ve held diverse roles in communications, research, and strategy...</p>
             <p><strong>What value I add.</strong> I balance thought-provoking questions with data-driven decisions...</p>
@@ -186,40 +207,19 @@
     </section>
 
     <!-- Blue Section Divider (Before Principles) -->
-    <div class="section-divider"></div>
+    <div class="section-divider">
+        <h2>Principles <span class="subheading">my core values.</span></h2>
+    </div>
 
     <!-- Principles Section -->
     <section class="principles">
-        <h2>Principles <span style="font-size: 16px; font-weight: normal;">my core values.</span></h2>
-        <p><strong>Human-Centered Design</strong> - Prioritize needs, remove friction, create intuitive experiences.</p>
-        <p><strong>DesignOps</strong> - Optimize people, processes, and amplify impact at scale.</p>
-        <p><strong>Storytelling</strong> - Craft compelling and memorable stories.</p>
-        <p><strong>Leadership</strong> - Empower others, drive results.</p>
-        <p><strong>Collaboration</strong> - Emphasize interdisciplinary mindset.</p>
-        <p><strong>Integrity</strong> - Accountable, trustworthy, and reliable.</p>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <p class="stat">52</p>
-                    <p>Books per year</p>
-                </div>
-                <div class="col-md-3 col-6">
-                    <p class="stat">4</p>
-                    <p>Degrees collected</p>
-                </div>
-                <div class="col-md-3 col-6">
-                    <p class="stat">16</p>
-                    <p>Years of experience</p>
-                </div>
-                <div class="col-md-3 col-6">
-                    <p class="stat">100%</p>
-                    <p>Creative passion</p>
-                </div>
-            </div>
+            <p><strong>Human-Centered Design</strong> - Prioritize needs, remove friction, create intuitive experiences.</p>
+            <p><strong>DesignOps</strong> - Optimize people, processes, and amplify impact at scale.</p>
+            <p><strong>Storytelling</strong> - Craft compelling and memorable stories.</p>
+            <p><strong>Leadership</strong> - Empower others, drive results.</p>
+            <p><strong>Collaboration</strong> - Emphasize interdisciplinary mindset.</p>
+            <p><strong>Integrity</strong> - Accountable, trustworthy, and reliable.</p>
         </div>
     </section>
 
