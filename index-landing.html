@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Portfolio</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <style>
         /* General Styling */
         body {
@@ -32,7 +32,7 @@
         }
 
         .hero h1 {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: bold;
         }
 
@@ -42,15 +42,30 @@
         }
 
         /* Logos Section */
+        .logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
         .logos img {
             max-width: 100px;
-            margin: 10px;
+            height: auto;
         }
 
         /* Portfolio Section */
+        .portfolio {
+            text-align: center;
+            padding: 20px 0;
+        }
+
         .portfolio img {
             width: 100%;
+            max-width: 150px;
             border-radius: 5px;
+            margin: 10px;
         }
 
         /* About Section */
@@ -62,6 +77,7 @@
 
         .about h2 {
             font-weight: bold;
+            text-transform: uppercase;
         }
 
         .about p {
@@ -103,7 +119,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand text-white" href="#">My Portfolio</a>
+            <a class="navbar-brand text-white" href="#">Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -123,31 +139,28 @@
         <p>Helping others get unstuck with clarity.</p>
         
         <!-- Logos -->
-        <div class="logos d-flex flex-wrap justify-content-center">
+        <div class="logos">
             <img src="hp-logo.png" alt="HP">
             <img src="exxon-logo.png" alt="ExxonMobil">
             <img src="rice-logo.png" alt="Rice University">
             <img src="fifa-logo.png" alt="FIFA">
             <img src="espn-logo.png" alt="ESPN">
         </div>
+
+        <p class="text-secondary">
+            I'm an empathetic design leader with experience in research, communications, brand management, 
+            and people-centered design. I've worked in diverse roles and industries, but my goal is the same: to connect people.
+        </p>
     </section>
 
     <!-- Portfolio Section -->
-    <section class="container text-center mt-4">
+    <section class="portfolio">
         <h5><strong>Explore Portfolio</strong></h5>
-        <div class="row g-3 mt-2">
-            <div class="col-md-3 col-6">
-                <img src="hp-image.jpg" alt="HP" class="portfolio">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="exxon-image.jpg" alt="ExxonMobil" class="portfolio">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="rice-owls.jpg" alt="Rice Owls" class="portfolio">
-            </div>
-            <div class="col-md-3 col-6">
-                <img src="espn-image.jpg" alt="ESPN" class="portfolio">
-            </div>
+        <div class="d-flex justify-content-center flex-wrap">
+            <img src="hp-image.jpg" alt="HP">
+            <img src="exxon-image.jpg" alt="ExxonMobil">
+            <img src="rice-owls.jpg" alt="Rice Owls">
+            <img src="espn-image.jpg" alt="ESPN">
         </div>
     </section>
 
@@ -155,7 +168,7 @@
     <section class="about mt-5">
         <div class="container">
             <h2>About <span style="font-size: 16px; font-weight: normal;">my origin story.</span></h2>
-            <p><strong>Where I started.</strong> I always loved soccer. At 15, I asked U.S. Soccer how to get involved at the highest level...</p>
+            <p><strong>Where I started.</strong> I always loved soccer. At 15, I asked U.S. Soccer how to get involved...</p>
             <p><strong>What I studied.</strong> I double-majored in Decision Science and Design...</p>
             <p><strong>What drives me.</strong> I’ve held diverse roles in communications, research, and strategy...</p>
             <p><strong>What value I add.</strong> I balance thought-provoking questions with data-driven decisions...</p>
