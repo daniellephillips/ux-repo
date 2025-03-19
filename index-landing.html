@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #5a7fd7;
+        }
+
+        .navbar a {
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            color: gray;
+            font-size: 16px;
+        }
+
+        /* Logos Section */
+        .logos img {
+            max-width: 100px;
+            margin: 10px;
+        }
+
+        /* Portfolio Section */
+        .portfolio img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #5a7fd7;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .about h2 {
+            font-weight: bold;
+        }
+
+        .about p {
+            font-size: 14px;
+        }
+
+        /* Principles Section */
+        .principles {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .principles h2 {
+            color: #5a7fd7;
+            font-weight: bold;
+        }
+
+        .principles p {
+            font-size: 16px;
+            color: black;
+        }
+
+        /* Stats Section */
+        .stats {
+            background-color: #5a7fd7;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .stats .stat {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Super-connector of ideas and people</h1>
+        <p>Helping others get unstuck with clarity.</p>
+        
+        <!-- Logos -->
+        <div class="logos d-flex flex-wrap justify-content-center">
+            <img src="hp-logo.png" alt="HP">
+            <img src="exxon-logo.png" alt="ExxonMobil">
+            <img src="rice-logo.png" alt="Rice University">
+            <img src="fifa-logo.png" alt="FIFA">
+            <img src="espn-logo.png" alt="ESPN">
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="container text-center mt-4">
+        <h5><strong>Explore Portfolio</strong></h5>
+        <div class="row g-3 mt-2">
+            <div class="col-md-3 col-6">
+                <img src="hp-image.jpg" alt="HP" class="portfolio">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="exxon-image.jpg" alt="ExxonMobil" class="portfolio">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="rice-owls.jpg" alt="Rice Owls" class="portfolio">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="espn-image.jpg" alt="ESPN" class="portfolio">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about mt-5">
+        <div class="container">
+            <h2>About <span style="font-size: 16px; font-weight: normal;">my origin story.</span></h2>
+            <p><strong>Where I started.</strong> I always loved soccer. At 15, I asked U.S. Soccer how to get involved at the highest level...</p>
+            <p><strong>What I studied.</strong> I double-majored in Decision Science and Design...</p>
+            <p><strong>What drives me.</strong> I’ve held diverse roles in communications, research, and strategy...</p>
+            <p><strong>What value I add.</strong> I balance thought-provoking questions with data-driven decisions...</p>
+        </div>
+    </section>
+
+    <!-- Principles Section -->
+    <section class="principles">
+        <h2>Principles <span style="font-size: 16px; font-weight: normal;">my core values.</span></h2>
+        <p><strong>Human-Centered Design</strong> - Prioritize needs, remove friction, create intuitive experiences.</p>
+        <p><strong>DesignOps</strong> - Optimize people, processes, and amplify impact at scale.</p>
+        <p><strong>Storytelling</strong> - Craft compelling and memorable stories.</p>
+        <p><strong>Leadership</strong> - Empower others, drive results.</p>
+        <p><strong>Collaboration</strong> - Emphasize interdisciplinary mindset.</p>
+        <p><strong>Integrity</strong> - Accountable, trustworthy, and reliable.</p>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <p class="stat">52</p>
+                    <p>Books per year</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <p class="stat">4</p>
+                    <p>Degrees collected</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <p class="stat">16</p>
+                    <p>Years of experience</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <p class="stat">100%</p>
+                    <p>Creative passion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
